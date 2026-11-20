@@ -1,5 +1,6 @@
 def greeting(name: str) -> str:
-    return f"Hello, {name}!"
+    cleaned_name = name.strip() or "developer"
+    return f"Hello, {cleaned_name}!"
 
 
 if __name__ == "__main__":
